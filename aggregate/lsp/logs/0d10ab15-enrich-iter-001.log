@@ -1,0 +1,16 @@
+[2026-04-20T12:45:45Z] === ENRICH ITERATION 1 START | repo=apple/servicetalk sha=0d10ab15 ===
+[2026-04-20T12:45:45Z] [iter=1] PHASE START: enrich repo=apple/servicetalk sha=0d10ab15 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0d10ab15-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz
+[2026-04-20T12:45:45Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-20T12:48:10Z] [iter=1] AST store loaded triples=12619635 load_secs=140 mem_mb=1243 MB
+[2026-04-20T12:48:10Z] [iter=1] Step 2: Finding LSP targets mem_mb=1243 MB
+[2026-04-20T12:49:12Z] [iter=1] LSP targets found call_sites=115660 imports=17271 extends=572 implements=0 secs=62
+[2026-04-20T12:50:09Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1243 MB
+[2026-04-20T12:51:34Z] [iter=1] Position index built positions=855277 nodes_with_types=1073943 secs=84 mem_mb=2473 MB
+[2026-04-20T12:51:34Z] [iter=1] Step 3: Starting LSP resolution mem_mb=2473 MB already_completed_types=[] already_completed_files=0
+[2026-04-20T12:51:34Z] [iter=1] Resolving target type target_type=call_site count=115660
+[2026-04-20T12:51:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=0 resolved=0 errors=0 current=servicetalk-redis-netty/src/test/java/io/servicetalk/redis/netty/RedisClientOffloadingTest.java
+[2026-04-20T12:56:28Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=10.7 files_done=1 resolved=31 errors=56 current=servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/DefaultPartitionedRedisCommander.java
+[2026-04-20T16:45:53Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=1 new_files_this_iter=1 mem_mb=2506 MB
+[2026-04-20T16:45:53Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz triples=71120
+[2026-04-20T16:45:54Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-20T16:45:54Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14408 elapsed_min=240.1 files_completed=1
