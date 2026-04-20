@@ -10,7 +10,7 @@
       "git:hexsha": "0d10ab15e5401f900f1af4c27e620827b4a426c0",
       "repolex:parseStatus": "parsed",
       "git:tagName": "pre-redis-removal",
-      "repolex:parsedAt": "2026-04-20T09:38:45.205450+00:00"
+      "repolex:parsedAt": "2026-04-20T10:57:00.900357+00:00"
     },
     {
       "@id": "https://repolex.ai/r/apple/servicetalk/commit/9b9df816977129f9e4a154b03e7c92de334f8043",
