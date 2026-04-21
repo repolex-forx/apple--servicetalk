@@ -2,10 +2,16 @@
   "commit_sha": "0d10ab15e5401f900f1af4c27e620827b4a426c0",
   "completed_files": [
     "servicetalk-concurrent-api/src/main/java/io/servicetalk/concurrent/api/AbstractPubToSingle.java",
+    "servicetalk-concurrent-api/src/test/java/io/servicetalk/concurrent/api/PublisherGroupByTest.java",
     "servicetalk-http-api/src/main/java/io/servicetalk/http/api/HttpServerBuilder.java",
+    "servicetalk-http-api/src/test/java/io/servicetalk/http/api/AbstractHttpHeadersTest.java",
+    "servicetalk-http-api/src/test/java/io/servicetalk/http/api/HttpExecutionStrategiesTest.java",
+    "servicetalk-http-netty/src/main/java/io/servicetalk/http/netty/DefaultMultiAddressUrlHttpClientBuilder.java",
     "servicetalk-http-netty/src/main/java/io/servicetalk/http/netty/DefaultPartitionedHttpClientBuilder.java",
+    "servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/BufferRedisCommanderToBlockingBufferRedisCommander.java",
     "servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/DefaultPartitionedRedisCommander.java",
-    "servicetalk-redis-netty/src/test/java/io/servicetalk/redis/netty/RedisClientOffloadingTest.java"
+    "servicetalk-redis-netty/src/test/java/io/servicetalk/redis/netty/RedisClientOffloadingTest.java",
+    "servicetalk-redis-netty/src/test/java/io/servicetalk/redis/netty/RedisCommanderTest.java"
   ],
   "completed_types": [],
   "stats": {
@@ -13,13 +19,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz",
     "call_sites": 115660,
     "import_statements": 17271,
-    "call_targets_resolved": 675,
+    "call_targets_resolved": 913,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 6054,
+    "errors": 8625,
     "extends_clauses": 572,
     "implements_clauses": 0,
     "import_modules_denormalized": 34542,
@@ -27,5 +33,5 @@
     "extends_class_denormalized": 0,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14410
+  "elapsed_seconds": 14426
 }
