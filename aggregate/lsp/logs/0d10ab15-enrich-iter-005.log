@@ -1,0 +1,16 @@
+[2026-04-21T05:51:36Z] === ENRICH ITERATION 5 START | repo=apple/servicetalk sha=0d10ab15 ===
+[2026-04-21T05:51:36Z] [iter=5] PHASE START: enrich repo=apple/servicetalk sha=0d10ab15 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0d10ab15-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz
+[2026-04-21T05:51:36Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-21T05:54:03Z] [iter=5] AST store loaded triples=12619635 load_secs=143 mem_mb=1244 MB
+[2026-04-21T05:54:03Z] [iter=5] Step 2: Finding LSP targets mem_mb=1244 MB
+[2026-04-21T05:55:03Z] [iter=5] LSP targets found call_sites=115660 imports=17271 extends=572 implements=0 secs=60
+[2026-04-21T05:55:08Z] [iter=5] Loaded checkpoint partial graph triples=100742
+[2026-04-21T05:56:03Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1244 MB
+[2026-04-21T05:57:30Z] [iter=5] Position index built positions=855277 nodes_with_types=1073943 secs=87 mem_mb=2651 MB
+[2026-04-21T05:57:30Z] [iter=5] Step 3: Starting LSP resolution mem_mb=2651 MB already_completed_types=[] already_completed_files=11
+[2026-04-21T05:57:30Z] [iter=5] Resolving target type target_type=call_site count=115660
+[2026-04-21T05:57:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=0 resolved=0 errors=0 current=servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/DefaultPartitionedBufferRedisCommander.java
+[2026-04-21T09:51:45Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=240.1 files_completed=11 new_files_this_iter=0 mem_mb=2667 MB
+[2026-04-21T09:51:45Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz triples=101378
+[2026-04-21T09:51:47Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-04-21T09:51:47Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=14409 elapsed_min=240.1 files_completed=11
