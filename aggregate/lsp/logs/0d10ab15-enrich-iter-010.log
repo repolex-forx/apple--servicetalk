@@ -1,0 +1,17 @@
+[2026-04-22T02:42:37Z] === ENRICH ITERATION 10 START | repo=apple/servicetalk sha=0d10ab15 ===
+[2026-04-22T02:42:37Z] [iter=10] PHASE START: enrich repo=apple/servicetalk sha=0d10ab15 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0d10ab15-enrich-iter-010.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz
+[2026-04-22T02:42:37Z] [iter=10] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-22T02:45:04Z] [iter=10] AST store loaded triples=12619635 load_secs=142 mem_mb=1242 MB
+[2026-04-22T02:45:04Z] [iter=10] Step 2: Finding LSP targets mem_mb=1242 MB
+[2026-04-22T02:46:03Z] [iter=10] LSP targets found call_sites=115660 imports=17271 extends=572 implements=0 secs=60
+[2026-04-22T02:46:10Z] [iter=10] Loaded checkpoint partial graph triples=161789
+[2026-04-22T02:47:06Z] [iter=10] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1242 MB
+[2026-04-22T02:48:33Z] [iter=10] Position index built positions=855277 nodes_with_types=1073943 secs=87 mem_mb=2773 MB
+[2026-04-22T02:48:33Z] [iter=10] Step 3: Starting LSP resolution mem_mb=2773 MB already_completed_types=[] already_completed_files=35
+[2026-04-22T02:48:33Z] [iter=10] Resolving target type target_type=call_site count=115660
+[2026-04-22T02:48:42Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=6.1 files_done=0 resolved=0 errors=0 current=servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/DefaultTransactedRedisCommander.java
+[2026-04-22T05:40:56Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=178.3 files_done=1 resolved=244 errors=2050 current=servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/DefaultRedisCommander.java
+[2026-04-22T06:43:00Z] [iter=10] CHECKPOINT TRIGGERED elapsed_min=240.4 files_completed=36 new_files_this_iter=1 mem_mb=2804 MB
+[2026-04-22T06:43:00Z] [iter=10] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz triples=174200
+[2026-04-22T06:43:03Z] [iter=10] Checkpoint written, exiting with code 7
+[2026-04-22T06:43:03Z] [iter=10] PHASE END: enrich (checkpointed) elapsed_s=14423 elapsed_min=240.4 files_completed=36
