@@ -1,0 +1,53 @@
+[2026-04-23T03:32:14Z] === ENRICH ITERATION 16 START | repo=apple/servicetalk sha=0d10ab15 ===
+[2026-04-23T03:32:14Z] [iter=16] PHASE START: enrich repo=apple/servicetalk sha=0d10ab15 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/0d10ab15-enrich-iter-016.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz
+[2026-04-23T03:32:14Z] [iter=16] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-23T03:34:35Z] [iter=16] AST store loaded triples=12619635 load_secs=135 mem_mb=1249 MB
+[2026-04-23T03:34:35Z] [iter=16] Step 2: Finding LSP targets mem_mb=1249 MB
+[2026-04-23T03:35:36Z] [iter=16] LSP targets found call_sites=115660 imports=17271 extends=572 implements=0 secs=61
+[2026-04-23T03:35:47Z] [iter=16] Loaded checkpoint partial graph triples=247196
+[2026-04-23T03:36:44Z] [iter=16] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1249 MB
+[2026-04-23T03:38:01Z] [iter=16] Position index built positions=855277 nodes_with_types=1073943 secs=77 mem_mb=2911 MB
+[2026-04-23T03:38:01Z] [iter=16] Step 3: Starting LSP resolution mem_mb=2911 MB already_completed_types=[] already_completed_files=162
+[2026-04-23T03:38:01Z] [iter=16] Resolving target type target_type=call_site count=115660
+[2026-04-23T03:38:49Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=6.6 files_done=0 resolved=0 errors=0 current=servicetalk-concurrent-api/src/test/java/io/servicetalk/concurrent/internal/SignalOffloaderCompletableTest.java
+[2026-04-23T03:46:32Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=14.3 files_done=1 resolved=3 errors=89 current=servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/ReservedRedisConnectionFilter.java
+[2026-04-23T03:47:24Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=15.2 files_done=2 resolved=8 errors=99 current=servicetalk-http-api/src/test/java/io/servicetalk/http/api/AbstractHttpRequestMetaDataTest.java
+[2026-04-23T04:12:47Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=40.5 files_done=3 resolved=29 errors=392 current=servicetalk-http-netty/src/main/java/io/servicetalk/http/netty/H2ClientParentConnectionContext.java
+[2026-04-23T04:21:27Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=49.2 files_done=4 resolved=36 errors=492 current=servicetalk-http-netty/src/main/java/io/servicetalk/http/netty/HttpClientChannelInitializer.java
+[2026-04-23T04:22:14Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=50.0 files_done=5 resolved=37 errors=501 current=servicetalk-http-router-jersey/src/main/java/io/servicetalk/http/router/jersey/DefaultContainer.java
+[2026-04-23T04:22:50Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=50.6 files_done=6 resolved=37 errors=508 current=servicetalk-http-netty/src/main/java/io/servicetalk/http/netty/DefaultHttpConnectionBuilder.java
+[2026-04-23T04:26:55Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=54.7 files_done=7 resolved=41 errors=555 current=servicetalk-concurrent-api/src/test/java/io/servicetalk/concurrent/api/MulticastPublisherTest.java
+[2026-04-23T04:38:00Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=65.8 files_done=8 resolved=42 errors=683 current=servicetalk-client-api-internal/src/test/java/io/servicetalk/client/api/internal/partition/PowerSetPartitionMapTest.java
+[2026-04-23T04:52:50Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=80.6 files_done=9 resolved=42 errors=855 current=servicetalk-http-router-jersey/src/main/java/io/servicetalk/http/router/jersey/ServiceTalkFeature.java
+[2026-04-23T04:53:26Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=81.2 files_done=10 resolved=42 errors=862 current=servicetalk-http-netty/src/main/java/io/servicetalk/http/netty/NettyHttpServer.java
+[2026-04-23T04:58:43Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=86.5 files_done=11 resolved=46 errors=923 current=servicetalk-opentracing-zipkin-publisher/src/test/java/io/servicetalk/opentracing/zipkin/publisher/ZipkinPublisherTest.java
+[2026-04-23T05:03:24Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=91.2 files_done=12 resolved=57 errors=977 current=servicetalk-concurrent-api-internal/src/test/java/io/servicetalk/concurrent/api/completable/PublishAndSubscribeOnTest.java
+[2026-04-23T05:04:47Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=92.5 files_done=13 resolved=57 errors=993 current=servicetalk-concurrent-api/src/test/java/io/servicetalk/concurrent/api/completable/CompletableConcatWithSingleTest.java
+[2026-04-23T05:07:12Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=95.0 files_done=14 resolved=57 errors=1021 current=servicetalk-concurrent-api/src/main/java/io/servicetalk/concurrent/api/TimeoutSingle.java
+[2026-04-23T05:10:03Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=97.8 files_done=15 resolved=63 errors=1054 current=servicetalk-buffer-api/src/main/java/io/servicetalk/buffer/api/ReadOnlyByteBuffer.java
+[2026-04-23T05:15:41Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=103.4 files_done=16 resolved=67 errors=1119 current=servicetalk-concurrent-reactivestreams/src/test/java/io/servicetalk/concurrent/reactivestreams/tck/SingleFlatMapTckTest.java
+[2026-04-23T05:25:26Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=113.2 files_done=18 resolved=89 errors=1232 current=servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/BlockingBufferRedisCommanderToBufferRedisCommander.java
+[2026-04-23T05:59:07Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=146.9 files_done=20 resolved=91 errors=1620 current=servicetalk-concurrent-api/src/main/java/io/servicetalk/concurrent/api/TimerCompletable.java
+[2026-04-23T05:59:38Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=147.4 files_done=21 resolved=93 errors=1626 current=servicetalk-http-api/src/main/java/io/servicetalk/http/api/MultiMap.java
+[2026-04-23T06:10:15Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=158.0 files_done=22 resolved=109 errors=1749 current=servicetalk-http-netty/src/test/java/io/servicetalk/http/netty/FlushStrategyOverrideTest.java
+[2026-04-23T06:14:35Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=162.3 files_done=23 resolved=109 errors=1799 current=servicetalk-http-utils/src/main/java/io/servicetalk/http/utils/HttpRequestUriUtils.java
+[2026-04-23T06:18:48Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=166.6 files_done=24 resolved=109 errors=1848 current=servicetalk-concurrent-internal/src/main/java/io/servicetalk/concurrent/internal/PlatformDependent.java
+[2026-04-23T06:19:56Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=167.7 files_done=25 resolved=119 errors=1861 current=servicetalk-http-netty/src/main/java/io/servicetalk/http/netty/AbstractStreamingHttpConnection.java
+[2026-04-23T06:20:58Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=168.7 files_done=26 resolved=124 errors=1873 current=servicetalk-redis-netty/src/test/java/io/servicetalk/redis/netty/RedisAuthConnectionFactoryConnectionTest.java
+[2026-04-23T06:23:55Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=171.7 files_done=27 resolved=132 errors=1907 current=servicetalk-opentracing-http/src/test/java/io/servicetalk/opentracing/http/TracingHttpServiceFilterTest.java
+[2026-04-23T06:27:18Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=175.1 files_done=28 resolved=132 errors=1946 current=servicetalk-http-netty/src/test/java/io/servicetalk/http/netty/SpliceFlatStreamToMetaSingleTest.java
+[2026-04-23T06:37:40Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=185.4 files_done=29 resolved=132 errors=2066 current=servicetalk-client-api-internal/src/main/java/io/servicetalk/client/api/internal/ServiceDiscovererUtils.java
+[2026-04-23T06:39:08Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=186.9 files_done=30 resolved=134 errors=2083 current=servicetalk-concurrent-api/src/test/java/io/servicetalk/concurrent/api/completable/CollectTest.java
+[2026-04-23T06:41:24Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=189.2 files_done=31 resolved=139 errors=2109 current=servicetalk-http-api/src/main/java/io/servicetalk/http/api/HttpHeaderValues.java
+[2026-04-23T06:44:41Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=192.4 files_done=33 resolved=141 errors=2147 current=servicetalk-http-netty/src/test/java/io/servicetalk/http/netty/NoOffloadsStrategyTest.java
+[2026-04-23T06:46:25Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=194.2 files_done=34 resolved=143 errors=2167 current=servicetalk-http-router-jersey/src/testFixtures/java/io/servicetalk/http/router/jersey/AbstractAsynchronousResourceTest.java
+[2026-04-23T06:47:07Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=194.9 files_done=35 resolved=143 errors=2175 current=servicetalk-http-netty/src/test/java/io/servicetalk/http/netty/PipelinedHttpConnectionTest.java
+[2026-04-23T06:50:14Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=198.0 files_done=36 resolved=143 errors=2211 current=servicetalk-http-api/src/test/java/io/servicetalk/http/api/DefaultHttpExecutionStrategyTest.java
+[2026-04-23T07:01:19Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=209.1 files_done=37 resolved=147 errors=2339 current=servicetalk-redis-netty/src/test/java/io/servicetalk/redis/netty/SubscribedRedisClientTest.java
+[2026-04-23T07:13:53Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=221.6 files_done=38 resolved=154 errors=2484 current=servicetalk-serialization-api/src/main/java/io/servicetalk/serialization/api/DefaultSerializer.java
+[2026-04-23T07:19:10Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=226.9 files_done=39 resolved=161 errors=2545 current=servicetalk-concurrent-api/src/test/java/io/servicetalk/concurrent/api/publisher/RepeatWhenTest.java
+[2026-04-23T07:25:22Z] [iter=16] HEARTBEAT target_type=call_site elapsed_min=233.1 files_done=40 resolved=161 errors=2617 current=servicetalk-redis-api/src/main/java/io/servicetalk/redis/api/TransactedBufferRedisCommanderToBlockingTransactedBufferRedisCommander.java
+[2026-04-23T07:33:04Z] [iter=16] CHECKPOINT TRIGGERED elapsed_min=240.8 files_completed=202 new_files_this_iter=40 mem_mb=2945 MB
+[2026-04-23T07:33:04Z] [iter=16] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/0d10ab15e5401f900f1af4c27e620827b4a426c0.nq.gz triples=261916
+[2026-04-23T07:33:11Z] [iter=16] Checkpoint written, exiting with code 7
+[2026-04-23T07:33:11Z] [iter=16] PHASE END: enrich (checkpointed) elapsed_s=14449 elapsed_min=240.8 files_completed=202
