@@ -1,0 +1,16 @@
+[2026-04-23T23:07:55Z] === ENRICH ITERATION 4 START | repo=apple/servicetalk sha=1ba85e3f ===
+[2026-04-23T23:07:55Z] [iter=4] PHASE START: enrich repo=apple/servicetalk sha=1ba85e3f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1ba85e3f-enrich-iter-004.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1ba85e3ff538d862a7bd4389f8753a4f066d2642.nq.gz
+[2026-04-23T23:07:55Z] [iter=4] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-23T23:10:18Z] [iter=4] AST store loaded triples=12832151 load_secs=139 mem_mb=1238 MB
+[2026-04-23T23:10:18Z] [iter=4] Step 2: Finding LSP targets mem_mb=1238 MB
+[2026-04-23T23:11:15Z] [iter=4] LSP targets found call_sites=125060 imports=31874 extends=811 implements=0 secs=57
+[2026-04-23T23:11:25Z] [iter=4] Loaded checkpoint partial graph triples=216096
+[2026-04-23T23:12:19Z] [iter=4] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1258 MB
+[2026-04-23T23:13:35Z] [iter=4] Position index built positions=838798 nodes_with_types=1116547 secs=76 mem_mb=3057 MB
+[2026-04-23T23:13:35Z] [iter=4] Step 3: Starting LSP resolution mem_mb=3057 MB already_completed_types=[] already_completed_files=1500
+[2026-04-23T23:13:35Z] [iter=4] Resolving target type target_type=call_site count=125060
+[2026-04-23T23:13:48Z] [iter=4] HEARTBEAT target_type=call_site elapsed_min=5.9 files_done=0 resolved=0 errors=0 current=servicetalk-examples/grpc/health/src/main/java/io/servicetalk/examples/grpc/health/HealthServerExample.java
+[2026-04-23T23:13:50Z] [iter=4] CHECKPOINT TRIGGERED elapsed_min=5.9 files_completed=2000 new_files_this_iter=500 mem_mb=3064 MB
+[2026-04-23T23:13:50Z] [iter=4] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/1ba85e3ff538d862a7bd4389f8753a4f066d2642.nq.gz triples=220307
+[2026-04-23T23:13:56Z] [iter=4] Checkpoint written, exiting with code 7
+[2026-04-23T23:13:56Z] [iter=4] PHASE END: enrich (checkpointed) elapsed_s=355 elapsed_min=5.9 files_completed=2000
