@@ -1,0 +1,15 @@
+[2026-04-23T22:15:35Z] === ENRICH ITERATION 1 START | repo=apple/servicetalk sha=1ba85e3f ===
+[2026-04-23T22:15:35Z] [iter=1] PHASE START: enrich repo=apple/servicetalk sha=1ba85e3f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/1ba85e3f-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/1ba85e3ff538d862a7bd4389f8753a4f066d2642.nq.gz
+[2026-04-23T22:15:35Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-04-23T22:18:01Z] [iter=1] AST store loaded triples=12832151 load_secs=141 mem_mb=1236 MB
+[2026-04-23T22:18:01Z] [iter=1] Step 2: Finding LSP targets mem_mb=1236 MB
+[2026-04-23T22:19:03Z] [iter=1] LSP targets found call_sites=125060 imports=31874 extends=811 implements=0 secs=62
+[2026-04-23T22:20:01Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1236 MB
+[2026-04-23T22:21:34Z] [iter=1] Position index built positions=838798 nodes_with_types=1116547 secs=93 mem_mb=2613 MB
+[2026-04-23T22:21:34Z] [iter=1] Step 3: Starting LSP resolution mem_mb=2613 MB already_completed_types=[] already_completed_files=0
+[2026-04-23T22:21:34Z] [iter=1] Resolving target type target_type=call_site count=125060
+[2026-04-23T22:21:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=6.2 files_done=0 resolved=0 errors=0 current=servicetalk-concurrent-api/src/test/java/io/servicetalk/concurrent/api/DefaultExecutorTest.java
+[2026-04-23T22:22:04Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=6.5 files_completed=500 new_files_this_iter=500 mem_mb=2756 MB
+[2026-04-23T22:22:04Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/1ba85e3ff538d862a7bd4389f8753a4f066d2642.nq.gz triples=174446
+[2026-04-23T22:22:07Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-04-23T22:22:07Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=389 elapsed_min=6.5 files_completed=500
